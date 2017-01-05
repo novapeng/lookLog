@@ -56,10 +56,10 @@
     ```javascript
     
         @SpringBootApplication(scanBasePackages = {"当前应用需要扫描的包", "novayoung.log"})   //此处增加对"novayoung.log"包的扫描
-        public class Application {
+        public class TestApplication {
         
             public static void main(String[] args) {
-                ApplicationContext applicationContext = SpringApplication.run(KaniuWebApplication.class, args);
+                ApplicationContext applicationContext = SpringApplication.run(TestApplication.class, args);
                 LookLogAppender.setApplicationContext(applicationContext);   //此处增加spring上下文的注入
             }
         }
