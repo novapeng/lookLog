@@ -8,7 +8,7 @@
 
 # 使用方式
 
-1. 添加依赖, 版本号与依赖的spring-boot版本号保持一致
+1. 将源代码pull到本地执行mvn install命令, 在应用项目的pom.xml中添加如下依赖,(版本号与依赖的spring-boot版本号保持一致)
 
     ```javascript
     
