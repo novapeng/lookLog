@@ -1,0 +1,16 @@
+<included>
+
+    <appender name="LookLog" class="novayoung.log.LookLogAppender">
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} ~|--_--|~ %thread ~|--_--|~ %X{traceId} ~|--_--|~ %-5level ~|--_--|~ %logger{36} ~|--_--|~ %line ~|--_--|~ - ~|--_--|~ %msg%n
+            </pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="LookLog" />
+    </root>
+
+</included>
